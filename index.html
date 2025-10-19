@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio - Ghaniy Asbie S</title>
+  <link rel="stylesheet" href="style.css.css" />
+
+  <!-- Smooth scroll & initial reveal -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: revealUp 2s ease forwards;
+    }
+    @keyframes revealUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Ghaniy Asbie Saputro</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#social">Social</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about reveal">
+    <div class="container about-inner">
+      <div class="photo-box">
+        <img src="img/WhatsApp Image 2025-10-19 at 7.55.53 AM.jpeg" alt="Foto Profil" />
+      </div>
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Saya <strong>Ghaniy Asbie Saputro</strong>, seorang individu yang menyukai dunia teknologi, desain, dan pengembangan web. Saya senang belajar hal baru dan menciptakan sesuatu yang bermanfaat melalui desain digital dan web modern.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education reveal">
+    <div class="container">
+      <h2>Edukasi</h2>
+      <div class="edu-card">
+        <h3>Universitas Negeri Surabaya</h3>
+        <p>Pendidikan Bahasa dan Sastra Indonesia — 2022–2026</p>
+      </div>
+      <div class="edu-card">
+        <h3>MA Bilingual Muslimat NU Sidoarjo</h3>
+        <p>Jurusan IPS — 2019–2022</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="social" class="section social reveal">
+    <div class="container">
+      <h2>Social Media</h2>
+      <p>Temukan saya di platform berikut:</p>
+      <div class="social-grid">
+        <a href="#" class="social-item x">X (Twitter)</a>
+        <a href="#" class="social-item ig">Instagram</a>
+        <a href="#" class="social-item tg">Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Ghaniy. Made with ❤️ using HTML & CSS.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
